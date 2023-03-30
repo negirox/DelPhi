@@ -1,0 +1,40 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "delphi-web-parts-client-side-solution",
+    "id": "2768d59a-aa55-4192-bda5-80d369bec410",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.16.1"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "delphi-web-parts description"
+      },
+      "longDescription": {
+        "default": "delphi-web-parts description"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "delphi-web-parts Feature",
+        "description": "The feature that activates elements of the delphi-web-parts solution.",
+        "id": "6a2ad068-8a90-42e6-bd6d-9f207cbdb523",
+        "version": "1.0.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/delphi-web-parts.sppkg"
+  }
+}

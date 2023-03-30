@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "delphi-banner-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/delphiBanner/DelphiBannerWebPart.js",
+          "manifest": "./src/webparts/delphiBanner/DelphiBannerWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "DelphiBannerWebPartStrings": "lib/webparts/delphiBanner/loc/{locale}.js"
+  }
+}
