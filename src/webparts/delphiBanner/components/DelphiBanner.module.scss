@@ -1,5 +1,10 @@
 @import '~@fluentui/react/dist/sass/References.scss';
-
+:global {
+  #workbenchPageContent,
+  .CanvasComponent.LCS .CanvasZone {
+    max-width: 100% !important;
+  }
+}
 .delphiBanner {
   overflow: hidden;
   color: "[theme:bodyText, default: #323130]";

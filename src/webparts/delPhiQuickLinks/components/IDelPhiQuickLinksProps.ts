@@ -4,5 +4,7 @@ export interface IDelPhiQuickLinksProps {
   tilesImageUrl: string;
   listName:string;
   context:WebPartContext;
+  isBackGround:boolean;
+  backGroundColor:string;
   
 }

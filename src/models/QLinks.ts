@@ -4,5 +4,7 @@ export class QLinks {
     IconName: string;
     Link: string;
     Order: number;
-    Target: string
+    Target: string;
+    BackgroundColor?:string;
+    BackgroundImageUrl?:string
 }

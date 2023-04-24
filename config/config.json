@@ -17,11 +17,29 @@
           "manifest": "./src/webparts/delPhiQuickLinks/DelPhiQuickLinksWebPart.manifest.json"
         }
       ]
+    },
+    "del-phi-search-web-part-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/delPhiSearchWebPart/DelPhiSearchWebPartWebPart.js",
+          "manifest": "./src/webparts/delPhiSearchWebPart/DelPhiSearchWebPartWebPart.manifest.json"
+        }
+      ]
+    },
+    "delphi-policy-web-part-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/delphiPolicyWebPart/DelphiPolicyWebPartWebPart.js",
+          "manifest": "./src/webparts/delphiPolicyWebPart/DelphiPolicyWebPartWebPart.manifest.json"
+        }
+      ]
     }
   },
   "externals": {},
   "localizedResources": {
     "DelphiBannerWebPartStrings": "lib/webparts/delphiBanner/loc/{locale}.js",
-    "DelPhiQuickLinksWebPartStrings": "lib/webparts/delPhiQuickLinks/loc/{locale}.js"
+    "DelPhiQuickLinksWebPartStrings": "lib/webparts/delPhiQuickLinks/loc/{locale}.js",
+    "DelPhiSearchWebPartWebPartStrings": "lib/webparts/delPhiSearchWebPart/loc/{locale}.js",
+    "DelphiPolicyWebPartWebPartStrings": "lib/webparts/delphiPolicyWebPart/loc/{locale}.js"
   }
 }

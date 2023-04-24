@@ -13,11 +13,14 @@
     "outDir": "lib",
     "inlineSources": false,
     "strictNullChecks": false,
-    "noImplicitAny": true,
-
+    "noImplicitAny": false,
+    "allowJs": true,
+    "checkJs": false,
     "typeRoots": [
       "./node_modules/@types",
-      "./node_modules/@microsoft"
+      "./node_modules/@microsoft",
+      "./typings",
+      "./node_modules/@types/"
     ],
     "types": [
       "webpack-env"

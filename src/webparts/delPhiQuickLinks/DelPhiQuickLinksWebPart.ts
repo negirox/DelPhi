@@ -3,6 +3,7 @@ import * as ReactDom from 'react-dom';
 import { Version } from '@microsoft/sp-core-library';
 import {
   IPropertyPaneConfiguration,
+  PropertyPaneCheckbox,
   PropertyPaneTextField
 } from '@microsoft/sp-property-pane';
 import { BaseClientSideWebPart } from '@microsoft/sp-webpart-base';
@@ -12,6 +13,8 @@ import { getSP } from '../../pnpjsConfig';
 export interface IDelPhiQuickLinksWebPartProps {
   tilesImageUrl: string;
   listName:string;
+  isBackGround:boolean;
+  backGroundColor:string;
 }
 
 export default class DelPhiQuickLinksWebPart extends BaseClientSideWebPart<IDelPhiQuickLinksWebPartProps> {
@@ -21,7 +24,9 @@ export default class DelPhiQuickLinksWebPart extends BaseClientSideWebPart<IDelP
       {
         tilesImageUrl: this.properties.tilesImageUrl,
         context: this.context,
-        listName: this.properties.listName ?? 'Quick Links'
+        listName: this.properties.listName ?? 'Quick Links',
+        backGroundColor:this.properties.backGroundColor,
+        isBackGround:this.properties.isBackGround
       }
     );
 
@@ -61,6 +66,12 @@ export default class DelPhiQuickLinksWebPart extends BaseClientSideWebPart<IDelP
                 }),
                 PropertyPaneTextField('listName', {
                   label: 'Enter List Name'
+                }),
+                PropertyPaneCheckbox('isBackGround',{
+                  text:'Select For background color'
+                }),
+                PropertyPaneTextField('backGroundColor', {
+                  label: 'Enter Background color'
                 })
               ]
             }
