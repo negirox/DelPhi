@@ -9,10 +9,19 @@
           "manifest": "./src/webparts/delphiBanner/DelphiBannerWebPart.manifest.json"
         }
       ]
+    },
+    "del-phi-quick-links-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/delPhiQuickLinks/DelPhiQuickLinksWebPart.js",
+          "manifest": "./src/webparts/delPhiQuickLinks/DelPhiQuickLinksWebPart.manifest.json"
+        }
+      ]
     }
   },
   "externals": {},
   "localizedResources": {
-    "DelphiBannerWebPartStrings": "lib/webparts/delphiBanner/loc/{locale}.js"
+    "DelphiBannerWebPartStrings": "lib/webparts/delphiBanner/loc/{locale}.js",
+    "DelPhiQuickLinksWebPartStrings": "lib/webparts/delPhiQuickLinks/loc/{locale}.js"
   }
 }

@@ -1,3 +1,4 @@
+
 export class HelperUtils
 {
     public static IsNullOrEmpty(obj:any):boolean{
@@ -7,5 +8,9 @@ export class HelperUtils
         return value === undefined ||
           value === null ||
           value.length === 0;
+    }
+    public static GenerateId(): string {
+        const uniqueId = Date.now().toString(36) + Math.random().toString(36).substring(2);
+        return uniqueId;
     }
 }
